@@ -1,0 +1,55 @@
+h1 {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.car-container {
+    padding: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.car {
+    background: #ffffff;
+    margin: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    width: 300px;
+    transition: 0.15s;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+.car img {
+    max-width: 100%;
+    height: auto;
+}
+
+.car h2 {
+    margin-top: 5px;
+    font-size: 24px;
+}
+
+.car h3 {
+    margin-top: 0px;
+    font-size: 14px;
+}
+
+.car .image-resize {
+    height: 180px;
+    width: 300px;
+    object-fit: cover;
+    object-position: center center;
+}
+
+.car img {
+    display: block;
+    margin: 0 auto 20px;
+    max-width: 100%;
+}
+
+.car:hover {
+    background-color: #ddd;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 0 15px 5px rgba(0, 0, 0, 0.24);
+    transform: scale(1.01);
+}

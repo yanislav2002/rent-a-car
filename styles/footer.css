@@ -1,0 +1,30 @@
+footer {
+    background-color: #4682B4;
+    padding: 20px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social-media {
+    font-size: 24px;
+}
+
+.social-media a {
+    color: #333;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.contact-info p {
+    margin: 0;
+}
+
+.additional-info p {
+    margin: 5px 0;
+    font-size: 12px;
+    color: rgb(12 100 120);
+}

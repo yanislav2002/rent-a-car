@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@600&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,800;0,900;1,600&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="./styles/navigation.css" />
+    <link rel="stylesheet" href="./styles/form.css" />
+    <link rel="stylesheet" href="./styles/home.css" />
+    <link rel="stylesheet" href="./styles/catalog.css" />
+    <link rel="stylesheet" href="./styles/car.css" />
+    <link rel="stylesheet" href="./styles/footer.css" />
+    <link rel="stylesheet" href="./styles/rent.css" />
+
+    <script defer src="./src/app.js" type="module"></script>
+    <title>Rent a car Varna</title>
+</head>
+
+<body>
+
+    <header>
+        <label class="logo" id="logo">Rent a car Varna</label>
+
+        <nav>
+            <a href="car" id="carBtn">Каталог</a>
+            <a href="#" id="logoutBtn">Изход</a>
+            <a href="login" id="loginBtn">Вход</a>
+            <a href="register" id="registerBtn">Регистрация</a>
+        </nav>
+
+    </header>
+
+    <main>
+        <section id="home-section" class="home">
+
+            <div class="headline">
+                <h2>Добре дошли в Rent a car Varna</h2>
+            </div>
+
+            <div class="welcome">
+                <div class="text">
+                    <p>Добре дошли в нашият сайт, където предлагаме голямо разнообразие от превозни средства на
+                        изключително ниски цени и неповторимо изживяване за всичките си клиенти. Нашата мисия е да Ви
+                        осигурим превозни средства от най-високо качество на достъпни цени, така че да можете да се
+                        наслаждавате на пътуването си, независимо от бюджетът Ви.</p>
+                </div>
+            </div>
+
+            <div class="vehicles" id="vehicles">
+                <div class="headline">
+                    <h2>Топ оферти</h2>
+                </div>
+                <div class="vehicle" id="vehicle-1">
+                    <img class="img-responsive image-resize" src="imgs/car-renault-zoe.jpg" alt="Car 1">
+                    <h3>Renault Zoe</h3>
+                    <p>30 лв/ден</p>
+                </div>
+                <div class="vehicle" id="vehicle-2">
+                    <img class="img-responsive image-resize" src="imgs/car-toyota-yaris.jpg" alt="Car 2">
+                    <h3>Toyota Yaris</h3>
+                    <p>22 лв/ден</p>
+                </div>
+                <div class="finale">
+                    <p>Rent a car with us and Drive Happy</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="login">
+            <div class="form">
+                <h2>Вход</h2>
+                <form class="login-form">
+                    <input type="text" name="email" id="email" placeholder="електронна поща" />
+                    <input type="password" name="password" id="password" placeholder="парола" />
+                    <button type="submit" id="loginContainerBtn"><b>влизане</b></button>
+                </form>
+            </div>
+        </section>
+
+        <section id="register">
+            <div class="form">
+                <h2>Регистрация</h2>
+                <form class="login-form">
+                    <input type="text" name="email" id="register-email" placeholder="електронна поща" />
+                    <input type="password" name="password" id="register-password" placeholder="парола" />
+                    <input type="password" name="re-password" id="repeat-password" placeholder="повторете паролата" />
+                    <button type="submit" id="registerContainerBtn">регистриране</button>
+                </form>
+            </div>
+        </section>
+
+        <div class="car-container" id="car-container">
+
+        </div>
+
+        <div class="car-details-container" id="car-details-container">
+        </div>
+
+        <div class="rent" id="rent">
+            <h2 id="rent">Изберете</h2>
+            <form>
+                <div class="form-group">
+                    <label for="start-date">Начална дата:</label>
+                    <input type="date" id="start-date" name="start-date">
+                </div>
+                <div class="form-group">
+                    <label for="end-date">Крайна дата:</label>
+                    <input type="date" id="end-date" name="end-date">
+                </div>
+                <input type="submit" value="Резервирай" id="submitBtn">
+                <div id="finalText"></div>
+            </form>
+        </div>
+
+    </main>
+</body>
+
+</html>
